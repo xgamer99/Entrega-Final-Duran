@@ -1,0 +1,41 @@
+@import "../base/mixin";
+@import "../base/variables";
+//CSS
+.lista{
+    @include flex(center);
+    .card{
+        background-color:rgba(77, 74, 74, 0.829);
+        margin-left: 10px;
+        width: 15rem;
+        img{
+            transition: 1s all;
+        }
+        .cubeImg:hover{
+            transform: scale(1.15);
+            transition: 1s all;
+        }
+        ul{
+            li{
+                text-align: left;
+            }
+        }
+        .botonColor{
+            background-color: $colorBoton;
+            transition: 1s all;
+            color: black;
+        }
+        .botonColorDos{
+            background-color: $botonColorDosP;
+            transition: 1s all;
+            color: white;
+        }
+        .botonColor:hover{
+            transition: 1s all;
+            color: white;
+        }
+        .botonColorDos:hover{
+            transition: 1s all;
+            color: rgb(255, 208, 0);
+        }
+    }
+}
